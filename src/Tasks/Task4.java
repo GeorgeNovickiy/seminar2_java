@@ -7,7 +7,7 @@ import java.io.IOException;
 // состоящую из 100 повторений слова TEST и метод,
 // который запишет эту строку в простой текстовый файл, обработайте исключения.
 public class Task4 {
-    private static String crateTestString(String argument) {
+    private static String createTestString(String argument) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 100; i++) {
             sb.append(argument);
@@ -16,7 +16,7 @@ public class Task4 {
     }
 
     public static void stringWrite(String argument) {
-        String str = crateTestString(argument);
+        String str = createTestString(argument);
         try (FileWriter in = new FileWriter("test.txt")) {
             in.append(str);
             System.out.println("Recorded");

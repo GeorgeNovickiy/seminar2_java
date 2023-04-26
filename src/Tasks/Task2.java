@@ -12,7 +12,7 @@ public class Task2 {
                 result.append(arr[i]);
                 continue;
             }
-            if arr[i].equals(arr[i - 1]){
+            if (arr[i].equals(arr[i - 1])){
                 count++;
             }
             else if (count != 1){
